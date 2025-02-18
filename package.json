@@ -1,7 +1,7 @@
 {
   "name": "vite-portfolio",
   "homepage": "https://example.com",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Portfolio web app built by maxim - frontend dev",
   "keywords": ["portfolio", "web app", "frontend", "vite"],
   "main": "main.jsx",
