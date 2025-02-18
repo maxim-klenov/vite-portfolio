@@ -86,7 +86,7 @@ nav {
     }
     .nav__close {
         position: absolute;
-        right: 1.3rem;
+        right: calc(1.3rem + var(--mb-1-5));
         bottom: 0.5rem;
         font-size: 1.5rem;
         cursor: pointer;
@@ -109,6 +109,10 @@ nav {
 @media screen and (max-width: 350px) {
     .nav__menu {
         padding: 2rem 0.25rem 4rem;
+    }
+
+    .nav__close {
+        right: calc(1.3rem + var(--mb-1));
     }
 
     .nav__list {

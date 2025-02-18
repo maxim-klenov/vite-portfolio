@@ -17,8 +17,6 @@ const Header = () => {
     };
     /*--------------- bottom line --------------- */
     const [borBottom, setBorBottom] = useState(false);
-    const [height, setHeight] = useState();
-//  parseInt(window.scrollY);
     useEffect(() => {
         const toggleScrollBor = () => {
             const w = window.scrollY;
