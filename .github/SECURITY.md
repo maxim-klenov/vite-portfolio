@@ -18,4 +18,3 @@ All security vulnerabilities will be promptly addressed.
 ---
 
 Thank you for helping keep our project secure!
-
