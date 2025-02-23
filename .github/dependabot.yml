@@ -25,5 +25,4 @@ updates:
       - dependency-name: "eslint-plugin-react-refresh"
       - dependency-name: "globals"
       - dependency-name: "vite"
-      
-    
+
