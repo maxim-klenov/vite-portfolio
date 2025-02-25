@@ -16,8 +16,16 @@
 
 ## About portfolio🔎
 
-
 * The project is under Apache-2.0 license
 * Language: Russian
 * The entire project has been developed using the React library.
 * The majority of the code utilises the JavaScript programming language.
+
+
+
+## Preview 💻 
+
+![image preview of the portfolio](preview.webp)
+
+## Would like to ask something?
+Here is my [Telegram](https://t.me/tgxzz) and [Whatsapp](https://api.whatsapp.com/send?phone=79964329699)
