@@ -14,7 +14,7 @@
 
 ![image preview of the portfolio](preview.webp)
 
-<span align="center"> here is how it looks </span>
+<span align="center"> Here's what it looks like </span>
 
 
 ## About portfolio🔎
