@@ -19,18 +19,6 @@ updates:
         version-strategy: "auto"
       - dependency-name: "swiper"
         version-strategy: "auto"
-    ignore:
-      - dependency-name: "react"
-        versions: ["^18.0.0"]
-      - dependency-name: "react-dom"
-        versions: ["^18.0.0"]
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    labels:
-      - "devDependencies"
-    allow:
       - dependency-name: "@eslint/js"
         version-strategy: "auto"
       - dependency-name: "@types/react"
@@ -51,3 +39,8 @@ updates:
         version-strategy: "auto"
       - dependency-name: "vite"
         version-strategy: "auto"
+    ignore:
+      - dependency-name: "react"
+        versions: ["^18.0.0"]
+      - dependency-name: "react-dom"
+        versions: ["^18.0.0"]
