@@ -6,6 +6,7 @@ updates:
       interval: "weekly"
     labels:
       - "dependencies"
+      - "devDependencies"
     allow:
       - dependency-name: "@emailjs/browser"
         version-strategy: "auto"
