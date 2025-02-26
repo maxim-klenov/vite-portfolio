@@ -40,4 +40,4 @@
 
 
 ### Would like to ask something?
-Here is my [Telegram](https://t.me/tgxzz) and [Whatsapp](https://api.whatsapp.com/send?phone=79964329699)
+Here is my [Telegram](https://t.me/tgxzz).
