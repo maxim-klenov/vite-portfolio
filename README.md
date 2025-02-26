@@ -12,7 +12,7 @@
 
 </span>
 
-![image preview of the portfolio](preview.webp)
+![image preview of the portfolio](.preview.webp)
 
 <span align="center"> Here's what it looks like </span>
 
