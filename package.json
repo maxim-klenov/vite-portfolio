@@ -1,10 +1,17 @@
 {
   "name": "portfolio_vite",
+  "homepage": "https://example.com",
   "version": "0.0.0",
   "description": "Portfolio web app built by maxim - frontend dev",
+  "keywords": ["portfolio", "web app", "frontend", "vite"],
   "main": "main.jsx",
   "author": "maxim klenov",
   "type": "module",
+  "license": "Apache",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxim-klenov/vite-portfolio.git",
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
