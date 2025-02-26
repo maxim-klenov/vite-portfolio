@@ -24,7 +24,7 @@ updates:
         versions: ["^18.0.0"]
       - dependency-name: "react-dom"
         versions: ["^18.0.0"]
-  - package-manager: "npm"
+  - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "weekly"
