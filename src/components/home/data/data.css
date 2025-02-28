@@ -1,0 +1,116 @@
+.home__data {
+    display: block;
+    position: relative;
+}
+
+
+.home__data::before {
+    content: "";
+    position: absolute;
+    background-image: url("svg/dots-bgc.svg");
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: 0;
+    left: -50px;
+    width: 80px;
+    height: 80px;
+    opacity: 0.2;
+}
+
+.home__data::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.home__title {
+    font-family: var(--eng-font), sans-serif;
+    font-size: var(--big-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.home__subtitle {
+    position: relative;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    padding-left: 5.4rem;
+    margin-bottom: var(--mb-2);
+    height: 25px;
+    display: flex; 
+    align-items: center;
+}
+
+.home__subtitle::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: var(--text-color);
+    left: 0;
+    top: 1rem;
+}
+
+.home__description {
+    max-width: 500px;
+    margin-bottom: var(--mb-3);
+}
+
+@media screen and (max-width: 992px) {
+    .home__title {
+        font-size: 5.75rem;
+    }
+
+    .home__subtitle {
+        padding-left: 3rem;
+        margin-bottom: var(--mb-1);
+    }
+
+    .home__subtitle::before {
+        width: 40px;
+        top: 0.8rem;
+    }
+
+    .home__description {
+        margin-left: 3.75rem;
+        margin-bottom: var(--mb-2-5);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home__title {
+        margin-bottom: var(--mb-1);
+    }
+    
+    .home__description {
+        margin-left: 0;
+    }
+
+    .home__subtitle::before {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .home__title {
+        font-size: 4.4rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .home__data::before {
+        top: -50px;
+    }
+    .home__title {
+        font-size: 3.5rem;
+        text-align: center;
+        margin: 0 auto 2rem;
+        display: block;
+    }
+    .home__subtitle {
+        padding-left: 1.75rem;
+    }
+    .home__description { 
+        font-size: var(--small-font-size);
+    }
+}

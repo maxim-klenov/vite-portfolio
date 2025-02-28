@@ -1,0 +1,100 @@
+/* ----- home css ----- */
+.home__container {
+    row-gap: 2rem;
+}
+
+.home__content {
+    grid-template-columns: 116px 1fr;
+    padding-top: 4.5rem;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+/* ----- social css ----- */
+.home__social {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+.home__social-icon {
+    font-size: 1.25rem;
+    color: var(--title-color);
+}
+
+.home__social-icon:hover {
+    color: var(--title-color-dark);
+}
+
+/* -----ScrollDown.css ----- */
+.home__scroll {
+    margin-left: 9.25rem;
+}
+
+.home__scroll-name {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-right: var(--mb-0-25);
+    margin-left: 2px;
+}
+
+.home__scroll-arrow {
+    color: var(--title-color);
+    font-size: 1.25rem;
+    transition: transform 0.1s ease;
+}
+
+.home__scroll:hover .home__scroll-arrow {
+    transform: translateY(2px);
+}
+
+/* ----- media properties ----- */
+@media screen and (max-width: 992px) {
+    .home {
+        height: 100vh;
+    }
+
+    .home__content {
+        grid-template-columns: 100px 1fr;
+        column-gap: 1.25rem;
+    }
+
+    .home__scroll {
+        margin-left: 7.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        height: 100vh;
+    }
+
+    .home__content {
+        column-gap: 0;
+        grid-template-columns: 50px 1fr;
+        padding-top: 8.5rem;
+    }
+
+    .home__scroll {
+        display: none;
+    }
+
+    .button {
+        float: left;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home__content {
+        grid-template-columns: 40px 1fr;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .home__content {
+        grid-template-columns: 1fr;
+    }
+    .home__social {
+        display: none;
+    }
+}
