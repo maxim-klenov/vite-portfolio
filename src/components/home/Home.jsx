@@ -1,6 +1,6 @@
 import './home.css'
 import Social from './Social'
-import Data from './Data'
+import Data from './data/Data'
 import ScrollDown from './ScrollDown'
 
 const Home = () => {
