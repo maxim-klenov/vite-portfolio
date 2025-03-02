@@ -2,7 +2,7 @@
 
 ### Reporting a Vulnerability
 
-If you discover a security vulnerability, please send an email to maxklenow@gmail.com.
+If you discover a security vulnerability, please send that to [me in telegram](https://t.me/tgxzz)
 
 We encourage responsible disclosure of vulnerabilities. If possible: provide steps to reproduce the issue.
 
