@@ -21,7 +21,7 @@ const social = () => {
     ];
 
     return (
-        <div className="home__social">
+        <aside className="home__social">
             {socialLinks.map((link, index) => (
                 <a
                     key={index}
@@ -30,12 +30,12 @@ const social = () => {
                     className="home__social-icon"
                     target="_blank"
                     aria-label={link.ariaLabel}
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                 >
                     <i className={link.className} />
                 </a>
             ))}
-        </div>
+        </aside>
     );
 };
 
