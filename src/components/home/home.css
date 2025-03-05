@@ -44,7 +44,7 @@
     transition: transform 0.1s ease;
 }
 
-.home__scroll:hover .home__scroll-arrow {
+.home__scroll-button:hover .home__scroll-arrow {
     transform: translateY(2px);
 }
 
