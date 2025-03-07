@@ -65,6 +65,10 @@
     height: 24px;
 }
 
+.home__button svg path {
+    fill: var(--container-color);
+}
+
 @media screen and (max-width: 992px) {
     .home__title {
         font-size: 8.75rem;

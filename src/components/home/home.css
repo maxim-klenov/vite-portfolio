@@ -1,5 +1,4 @@
 /* ----- home css ----- */
-/* .home__container {} */
 
 .home__content {
     grid-template-columns: 116px 1fr;
@@ -34,8 +33,11 @@
 .home__scroll-arrow svg {
     width: 20px;
     height: 20px;
-    font-size: 1.25rem;
     transition: transform 0.1s ease;
+}
+
+.home__scroll-arrow path {
+    fill: var(--title-color);
 }
 
 .home__scroll-button:hover .home__scroll-arrow svg {
@@ -81,12 +83,6 @@
     .home__social {
         display: none;
     }
-}
-
-@media screen and (max-width: 576px) {
-    /* .home__content {
-        grid-template-columns: 40px 1fr;
-    } */
 }
 
 @media screen and (max-width: 350px) {
