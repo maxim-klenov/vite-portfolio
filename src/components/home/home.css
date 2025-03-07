@@ -37,16 +37,17 @@
     margin-right: var(--mb-0-25);
     margin-left: 2px;
 }
-
-.home__scroll-arrow {
-    color: var(--title-color);
+ 
+.home__scroll-arrow svg {
+    width: 20px;
+    height: 20px;
     font-size: 1.25rem;
     transition: transform 0.1s ease;
 }
 
-.home__scroll-button:hover .home__scroll-arrow {
-    transform: translateY(2px);
-}
+.home__scroll-button:hover .home__scroll-arrow svg {
+    transform: translateY(4px);
+} 
 
 /* ----- media properties ----- */
 @media screen and (max-width: 992px) {
