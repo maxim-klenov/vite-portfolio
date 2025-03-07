@@ -5,7 +5,7 @@
 
 <span align="center"> 
   
-  <p>I am a front-end developer based in Moscow, specialising in the creation of user interface and user experience (UI/UX) for web pages. This is one of my main projects - portfolio.</p>
+  <p>I am a front-end developer based in Tula, specialising in the creation of user interface and user experience (UI/UX) for web pages. This is one of my main projects - portfolio.</p>
 
   
   [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
