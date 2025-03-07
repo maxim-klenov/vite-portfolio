@@ -35,7 +35,7 @@ const Data = () => {
                 В настоящее время специализируюсь на разработке React Typescript
                 проектов / статичных сайтов. Разработчик-самоучка.
             </p>
-            <a href="#contact" className="button button--flex">
+            <a href="#contact" className="home__button button button--flex">
                 Связаться
                 <ReactSVG src="/svg/arrow-up-right.svg" />
             </a>
