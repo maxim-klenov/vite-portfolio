@@ -10,7 +10,7 @@
   
   [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
-There should be a demo link of that GitHub repo someday soon...
+<sub>There should be a demo link of that GitHub repo someday soon...</sub>
 
 </span>
 
