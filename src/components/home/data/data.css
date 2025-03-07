@@ -55,6 +55,13 @@
     margin-bottom: var(--mb-3);
 }
 
+.button svg {
+    margin-top: 0.2rem; 
+    margin-left: var(--mb-0-5);
+    width: 24px;
+    height: 24px;
+}
+
 @media screen and (max-width: 992px) {
     .home__title {
         font-size: 5.75rem;
