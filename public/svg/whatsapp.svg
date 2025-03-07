@@ -3,7 +3,7 @@
     width="24" 
     height="24" 
     viewBox="0 0 24 24" 
-    style="fill: var(--title-color);transform: ;msFilter:;"
+    style="transform: ;msFilter:;"
 >
     <path 
         fill-rule="evenodd" 

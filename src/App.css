@@ -179,6 +179,14 @@ img {
     align-items: center;
 }
 
+.react-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.react-icon svg {
+    fill: var(--title-color);
+}
 /*=============== BREAKPOINTS ===============*/
 @media screen and (max-width: 992px) {
     .container {
