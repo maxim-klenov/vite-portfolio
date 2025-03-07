@@ -166,7 +166,7 @@ img {
     left: 0;
     z-index: -1;
     transition: all 0.4s;
-    background-color: #002a45;  
+    background-color: var(--title-color);  
 }
 
 .button:hover::after {
