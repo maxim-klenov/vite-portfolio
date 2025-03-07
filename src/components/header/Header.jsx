@@ -1,14 +1,15 @@
 import { useState, useEffect } from 'react'
+import { ReactSVG } from 'react-svg'
 import './header.css'
 
 const Header = () => {
     /*---------------  nav links ---------------- */
     const navLinks = [
-        {href: "#home", icon: "uil-estate", text: "Главная"},
-        {href: "#about", icon: "uil-user", text: "Обо мне"},
-        {href: "#skills", icon: "uil-file-alt", text: "Навыки"},
-        {href: "#portfolio", icon: "uil-scenery", text: "Проекты"},
-        {href: "#contact", icon: "uil-message", text: "Написать"},
+        {href: "#home", iconSrc: "/svg/estate.svg", text: "Главная"},
+        {href: "#about", iconSrc: "/svg/user.svg", text: "Обо мне"},
+        {href: "#skills", iconSrc: "/svg/file-alt.svg", text: "Навыки"},
+        {href: "#portfolio", iconSrc: "/svg/scenery.svg", text: "Проекты"},
+        {href: "#contact", iconSrc: "/svg/message.svg", text: "Написать"},
     ]
     /*--------------- toggle menu --------------- */
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,19 +51,17 @@ const Header = () => {
                         {navLinks.map((navLink, i) => (
                             <li key={i} className='nav__item'>
                                 <a href={navLink.href} className='nav__link'>
-                                <i className={`uil ${navLink.icon} nav__icon`}></i>
+                                <ReactSVG src={navLink.iconSrc} className="nav__icon react-icon"/>
                                 {navLink.text}
                                 </a>
                             </li>
                         ))}  
                     </ul>
-                    <i className="uil uil-times nav__close" onClick={handleToggleMenu} ></i>
+                    <ReactSVG src="/svg/close-burger.svg" className='nav__close react-icon' onClick={handleToggleMenu}/>
                 </div>
 
                 {/*--------------- media toggle nav btn --------------- */}
-                <div className="nav__toggle" onClick={handleToggleMenu}>
-                    <i className="uil uil-apps"></i>
-                </div>
+                    <ReactSVG src="/svg/burger.svg" className='nav__toggle react-icon' onClick={handleToggleMenu}/>
             </nav>
         </header>
     )
