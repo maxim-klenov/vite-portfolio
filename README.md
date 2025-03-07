@@ -31,7 +31,7 @@
 </span>
 
 <ul>
-  <li> The project is under Apache-2.0 license </li>
+  <li> This project is licensed under the Apache-2.0 license </li>
   <li> Language: Russian </li>
   <li> The entire project has been developed using the React library. </li>
   <li> The majority of the code utilises the JavaScript programming language. </li>
