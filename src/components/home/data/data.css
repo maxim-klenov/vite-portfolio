@@ -55,31 +55,31 @@
     margin-bottom: var(--mb-3);
 }
 
-.button svg {
-    margin-top: 0.2rem; 
+.home__button > div {
     margin-left: var(--mb-0-5);
+}
+
+.home__button svg {
+    margin-top: 0.2rem; 
     width: 24px;
     height: 24px;
 }
 
 @media screen and (max-width: 992px) {
     .home__title {
-        font-size: 5.75rem;
+        font-size: 8.75rem;
     }
-
     .home__subtitle {
         padding-left: 3rem;
         margin-bottom: var(--mb-1);
     }
-
     .home__subtitle::before {
         width: 40px;
         top: 0.8rem;
     }
-
     .home__description {
         margin-left: 3.75rem;
-        margin-bottom: var(--mb-2-5);
+        margin-bottom: var(--mb-3);
     }
 }
 
@@ -87,26 +87,69 @@
     .home__title {
         margin-bottom: var(--mb-1);
     }
-    
     .home__description {
         margin-left: 0;
     }
-
     .home__subtitle::before {
         display: none;
     }
+    .home__button {
+        float: none;
+    }
 }
 
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 677px) {
     .home__title {
-        font-size: 4.4rem;
+        font-size: 5.5rem;
+        text-align: center; 
+        display: block;
+    }
+    .home__description {
+        max-width: 450px;
+        text-align: center;
+        margin: 0 auto var(--mb-3);
+    }
+    .home__subtitle {
+        font-size: 1.2rem;
+        justify-content: center;
+        padding-left: 0;
+    }
+    .text-rotate {
+        height: auto;
+    }
+    .home__button {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        margin: 0 auto;
+        display: flex;
+        max-width: 200px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .home__title {
+        font-size: 4.5rem;
+        margin-bottom: var(--mb-3);
+    }
+    .home__data {
+        position: static;
+    }
+    .home__button {
+        position: absolute;
+        bottom: 6rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .button:hover {
+        transform: translate(-50%, 3px);
     }
 }
 
 @media screen and (max-width: 350px) {
     .home__data::before {
-        top: -50px;
+        top: 140px;
+        left: 10px;
     }
     .home__title {
         font-size: 3.5rem;
@@ -115,7 +158,7 @@
         display: block;
     }
     .home__subtitle {
-        padding-left: 1.75rem;
+        font-size: 1.1rem;
     }
     .home__description { 
         font-size: var(--small-font-size);
