@@ -21,7 +21,7 @@ const Header = () => {
     useEffect(() => {
         const toggleScrollBor = () => {
             const w = window.scrollY;
-            if (parseInt(window.scrollY) > 80) {
+            if (parseInt(w) > 80) {
                 if (!borBottom) {
                     setBorBottom(!borBottom)
                 }
