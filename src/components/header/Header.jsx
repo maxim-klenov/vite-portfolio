@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { ReactSVG } from 'react-svg'
-// import { socialLinks } from '../home/resources/socialLinks'
+import { socialLinks } from '../home/resources/socialLinks'
 import './header.css'
 
 const Header = () => {
@@ -64,11 +64,21 @@ const Header = () => {
                             </li>
                         ))}  
                     </ul>
-                    {/* {socialLinks.map((link, index) => (
-                        <a key={index} href={link.href} aria-label={link.ariaLabel} title={link.title}>
-                            <img src={link.src} alt={link.title} />
-                        </a>
-                    ))} */}
+                    <ul className="nav__menu-social">
+                        {socialLinks.map((link, index) => (
+                            <a 
+                                key={index} 
+                                href={link.href} 
+                                aria-label={link.ariaLabel} 
+                                title={link.title}
+                                className="nav__menu-social__link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <ReactSVG src={link.src} alt={link.title} className="react-icon"/>
+                            </a>
+                        ))}
+                    </ul>
                 </div>
 
                 {/*--------------- media toggle nav btn --------------- */}
