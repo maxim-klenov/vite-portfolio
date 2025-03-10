@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { ReactSVG } from 'react-svg'
+// import { socialLinks } from '../home/resources/socialLinks'
 import './header.css'
 
 const Header = () => {
@@ -15,6 +16,11 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const handleToggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+        if (!isMenuOpen) {
+            document.body.classList.toggle('body__hidden');
+        } else {
+            document.body.classList.toggle('body__hidden');
+        }
     };
     /*--------------- bottom line --------------- */
     const [borBottom, setBorBottom] = useState(false);
@@ -47,6 +53,7 @@ const Header = () => {
                 </a>
 
                 <div className={isMenuOpen ? 'nav__menu show-menu' : 'nav__menu'}>
+                    <ReactSVG src="/svg/close-burger.svg" className='nav__close react-icon' onClick={handleToggleMenu}/>
                     <ul className="nav__list grid">
                         {navLinks.map((navLink, i) => (
                             <li key={i} className='nav__item'>
@@ -57,7 +64,11 @@ const Header = () => {
                             </li>
                         ))}  
                     </ul>
-                    <ReactSVG src="/svg/close-burger.svg" className='nav__close react-icon' onClick={handleToggleMenu}/>
+                    {/* {socialLinks.map((link, index) => (
+                        <a key={index} href={link.href} aria-label={link.ariaLabel} title={link.title}>
+                            <img src={link.src} alt={link.title} />
+                        </a>
+                    ))} */}
                 </div>
 
                 {/*--------------- media toggle nav btn --------------- */}

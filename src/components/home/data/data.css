@@ -113,6 +113,10 @@
         text-align: center;
         margin: 0 auto var(--mb-3);
     }
+    .home__data::before {
+        top: -20px;
+        left: 10px;
+    }
     .home__subtitle {
         font-size: 1.2rem;
         justify-content: center;
@@ -139,6 +143,10 @@
     .home__data {
         position: static;
     }
+    .home__data::before {
+        top: 140px;
+        left: 10px;
+    }
     .home__button {
         position: absolute;
         bottom: 6rem;
@@ -151,10 +159,6 @@
 }
 
 @media screen and (max-width: 350px) {
-    .home__data::before {
-        top: 140px;
-        left: 10px;
-    }
     .home__title {
         font-size: 3.5rem;
         text-align: center;
