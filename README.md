@@ -27,7 +27,7 @@
   [![CSS](https://img.shields.io/badge/CSS-3-blue)](https://www.w3.org/Style/CSS/)
   [![JavaScript](https://img.shields.io/badge/JavaScript-ES7-yellow)](https://www.javascript.com/)
   [![React](https://img.shields.io/badge/React-19.0.0-04aecc)](https://reactjs.org/)
-  [![Vite](https://img.shields.io/badge/Vite-6.2.0-blue)](https://vitejs.dev/)
+  [![Vite](https://img.shields.io/badge/Vite-6.2.1-blue)](https://vitejs.dev/)
   [![License](https://img.shields.io/badge/License-Apache_2.0-07ab6c.svg)](https://opensource.org/licenses/Apache-2.0)
 
 </span>
