@@ -13,7 +13,7 @@ header {
     justify-content: space-between;
     align-items: center;
     column-gap: 1rem;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 .nav-border-bottom {
@@ -21,9 +21,8 @@ header {
 }
 
 .nav__logo {
-    font-family: "Poppins", serif;
+    font-family: var(--font-medium);
     color: var(--title-color);
-    font-weight: var(--font-medium);
 }
 
 .nav__list {
@@ -36,8 +35,8 @@ header {
 }
 
 .nav__menu-social__link div {
-    width: 55px;
-    height: 55px;
+    width: 3.4375rem;
+    height: 3.4375rem;
     background-color: var(--title-color);
     border-radius: 50%;
     display: flex;
@@ -46,8 +45,8 @@ header {
 }
 
 .nav__menu-social__link svg {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .nav__menu-social__link svg path {
@@ -60,7 +59,7 @@ header {
     align-items: center;
     font-size: var(--small-font-size);
     color: var(--title-color);
-    font-weight: var(--font-medium);
+    font-family: var(--font-medium);
     transition: 0.3s;
 }
 
@@ -109,13 +108,13 @@ header {
     .nav__link {
         flex-direction: row;
         font-size: var(--h2-font-size);
-        font-weight: var(--font-semi-bold);
+        font-family: var(--font-semi-bold);
         align-items: center;
     }
     .nav__menu-social {
         display: flex;
         margin: 5rem auto 0;
-        width: 200px;
+        width: 12.5rem;
         align-items: center;
         justify-content: space-between;
     }
@@ -134,15 +133,15 @@ header {
         display: block;
     }
     .nav__icon {
-        width: 40px;
-        height: 40px;
+        width: 2.5rem;
+        height: 2.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .nav__icon svg {
-        width: 30px;
-        height: 30px;
+        width: 1.875rem;
+        height: 1.875rem;
     }
 }
 
@@ -154,8 +153,8 @@ header {
         right: calc(1.3rem + var(--mb-1));
     }
     :is(.nav__icon, .nav__close, .nav__toggle,) svg {
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        height: 1.25rem;
     }
     .nav__list {
         column-gap: 0;
