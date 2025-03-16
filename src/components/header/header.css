@@ -21,9 +21,8 @@ header {
 }
 
 .nav__logo {
-    font-family: "Poppins", serif;
+    font-family: var(--font-medium);
     color: var(--title-color);
-    font-weight: var(--font-medium);
 }
 
 .nav__list {
@@ -60,7 +59,7 @@ header {
     align-items: center;
     font-size: var(--small-font-size);
     color: var(--title-color);
-    font-weight: var(--font-medium);
+    font-family: var(--font-medium);
     transition: 0.3s;
 }
 
@@ -109,7 +108,7 @@ header {
     .nav__link {
         flex-direction: row;
         font-size: var(--h2-font-size);
-        font-weight: var(--font-semi-bold);
+        font-family: var(--font-semi-bold);
         align-items: center;
     }
     .nav__menu-social {

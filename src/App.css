@@ -1,10 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600&display=swap"); */
 @font-face {
-    font-family: "Inter";
-    src:url('fonts/Inter-Bold.ttf') format('truetype');
+    font-family: "Inter-bold";
+    src:url('/fonts/Inter-Bold.woff2') format('woff2');
     font-weight: bold;
+    font-display: swap;
 }
-
+@font-face {
+    font-family: "Montserrat-regular";
+    src: url("/fonts/Montserrat-Regular.woff2")
+        format("woff2");
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Montserrat-semiBold";
+    src: url("/fonts/Montserrat-SemiBold.woff2")
+        format("woff2");
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Montserrat-medium";
+    src: url("/fonts/Montserrat-Medium.woff2")
+        format("woff2");
+    font-weight: 500;
+    font-display: swap;
+}
 :root {
     --header-height: 3rem;
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -13,8 +34,11 @@
     --text-color: #194a7a;
     --body-color: #d1dbe4;
     --container-color: #bac9d7;
-    --body-font: "Montserrat", sans-serif;
-    --eng-font: "Inter", sans-serif;
+    --body-font: "Montserrat-regular", sans-serif;
+    --font-medium: "Montserrat-medium", sans-serif;
+    --font-semi-bold: "Montserrat-semiBold", sans-serif;
+    --eng-font: "Inter-bold", sans-serif;
+    --font-normal: 400;
     --big-font-size: 9.5rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
@@ -23,9 +47,6 @@
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
     --tiny-font-size: 0.625rem;
-    --font-normal: 400;
-    --font-medium: 500;
-    --font-semi-bold: 600;
     --mb-0-25: 0.25rem;
     --mb-0-5: 0.5rem;
     --mb-0-75: 0.75rem;
