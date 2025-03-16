@@ -27,12 +27,12 @@
     color: var(--title-color);
     font-weight: var(--font-medium);
     margin-right: var(--mb-0-25);
-    margin-left: 2px;
+    margin-left: 0.125rem;
 }
  
 .home__scroll-arrow svg {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     transition: transform 0.1s ease;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .home__scroll-button:hover .home__scroll-arrow svg {
-    transform: translateY(4px);
+    transform: translateY(.25rem);
 } 
 
 /* ----- media properties ----- */
