@@ -28,13 +28,13 @@
   [![JavaScript](https://img.shields.io/badge/JavaScript-ES7-yellow)](https://www.javascript.com/)
   [![React](https://img.shields.io/badge/React-19.0.0-04aecc)](https://reactjs.org/)
   [![Vite](https://img.shields.io/badge/Vite-6.2.1-blue)](https://vitejs.dev/)
-  [![License](https://img.shields.io/badge/License-Apache_2.0-07ab6c.svg)](https://opensource.org/licenses/Apache-2.0)
+  [![License](https://img.shields.io/badge/License-MIT-07ab6c.svg)](https://opensource.org/licenses/MIT)
 
 </span>
 
 <ul>
-  <li> This project is licensed under the Apache-2.0 license </li>
   <li> Language: Russian </li>
+  <li> This project is licensed under the MIT license </li>
   <li> The entire project has been developed using the React library. </li>
   <li> The majority of the code utilises the JavaScript programming language. </li>
 </ul>
