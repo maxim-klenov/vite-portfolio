@@ -17,7 +17,7 @@ const Data = () => {
                 </h1>
                 <h2 className="home__subtitle">
                     <RotatingText
-                        texts={["Фронтэнд", "React", "Креативного"]}
+                        texts={["Фронтэнд","Jamstack", "React", "Креативного"]}
                         mainClassName="px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
                         staggerFrom={"last"}
                         initial={{ y: "100%" }}
