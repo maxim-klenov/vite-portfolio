@@ -1,42 +1,61 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .text-rotate {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    white-space: pre-wrap;
-    position: relative;
-    height: 2rem;
-    border-radius: 5px;
-    background-color: var(--text-color);
-    color: var(--body-color);
-    margin: 0 0.3rem; 
-  }
-  
-  .text-rotate-sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-  
-  .text-rotate-word {
-    display: inline-flex;
-  }
-  
-  .text-rotate-lines {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .text-rotate-element {
-    display: inline-block;
-  }
-  
-  .text-rotate-space {
-    white-space: pre;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  white-space: pre-wrap;
+  position: relative;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: var(--text-color);
+  color: var(--body-color);
+  margin: 0 0.3rem; 
+}
+
+.text-rotate-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.text-rotate-word {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.text-rotate-lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.text-rotate-element {
+  display: inline-block;
+}
+
+.text-rotate-space {
+  white-space: pre;
+}

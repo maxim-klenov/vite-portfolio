@@ -1,15 +1,31 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* ----- home css ----- */
 
 .home__content {
+    -ms-grid-columns: 116px 2rem 1fr;
     grid-template-columns: 116px 1fr;
     padding-top: 4.5rem;
-    column-gap: 2rem;
-    align-items: center;
+    -webkit-column-gap: 2rem;
+       -moz-column-gap: 2rem;
+            column-gap: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 /* ----- social css ----- */
 .home__social {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: -webkit-max-content;
+    -ms-grid-columns: max-content;
+    grid-template-columns: -webkit-max-content;
     grid-template-columns: max-content;
     row-gap: 1rem;
 }
@@ -33,7 +49,11 @@
 .home__scroll-arrow svg {
     width: 1.25rem;
     height: 1.25rem;
+    -webkit-transition: -webkit-transform 0.1s ease;
+    transition: -webkit-transform 0.1s ease;
+    -o-transition: transform 0.1s ease;
     transition: transform 0.1s ease;
+    transition: transform 0.1s ease, -webkit-transform 0.1s ease;
 }
 
 .home__scroll-arrow path {
@@ -41,7 +61,9 @@
 }
 
 .home__scroll-button:hover .home__scroll-arrow svg {
-    transform: translateY(.25rem);
+    -webkit-transform: translateY(.25rem);
+        -ms-transform: translateY(.25rem);
+            transform: translateY(.25rem);
 } 
 
 /* ----- media properties ----- */
@@ -51,8 +73,11 @@
     }
 
     .home__content {
+        -ms-grid-columns: 100px 0.25rem 1fr;
         grid-template-columns: 100px 1fr;
-        column-gap: 0.25rem;
+        -webkit-column-gap: 0.25rem;
+           -moz-column-gap: 0.25rem;
+                column-gap: 0.25rem;
     }
 
     .home__scroll {
@@ -66,7 +91,10 @@
     }
 
     .home__content {
-        column-gap: 0;
+        -webkit-column-gap: 0;
+           -moz-column-gap: 0;
+                column-gap: 0;
+        -ms-grid-columns: 50px 0 1fr;
         grid-template-columns: 50px 1fr;
         padding-top: 8.5rem;
     }
@@ -78,12 +106,10 @@
 
 @media screen and (max-width: 677px) {
     .home__content {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
     .home__social {
         display: none;
     }
-}
-
-@media screen and (max-width: 350px) {
 }
