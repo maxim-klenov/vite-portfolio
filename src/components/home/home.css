@@ -68,10 +68,6 @@
 
 /* ----- media properties ----- */
 @media screen and (max-width: 992px) {
-    .home {
-        height: 100vh;
-    }
-
     .home__content {
         -ms-grid-columns: 100px 0.25rem 1fr;
         grid-template-columns: 100px 1fr;
@@ -79,17 +75,12 @@
            -moz-column-gap: 0.25rem;
                 column-gap: 0.25rem;
     }
-
     .home__scroll {
         margin-left: 7.5rem;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .home {
-        height: 100vh;
-    }
-
     .home__content {
         -webkit-column-gap: 0;
            -moz-column-gap: 0;
@@ -111,5 +102,11 @@
     }
     .home__social {
         display: none;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .home {
+        height: 100vh;
     }
 }

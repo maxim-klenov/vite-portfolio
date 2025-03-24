@@ -100,7 +100,7 @@ h1,
 h2,
 h3 {
     color: var(--title-color);
-    font-weight: var(--font-semi-bold);
+    font-family: var(--font-semi-bold);
 }
 
 ul {

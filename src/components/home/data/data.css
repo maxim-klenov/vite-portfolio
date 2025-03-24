@@ -172,7 +172,7 @@
             -ms-transform: translate(-50%, 0);
                 transform: translate(-50%, 0);
     }
-    .button:hover {
+    .home__button:hover {
         -webkit-transform: translate(-50%, 3px);
             -ms-transform: translate(-50%, 3px);
                 transform: translate(-50%, 3px);
