@@ -12,7 +12,7 @@
   "main": "main.jsx",
   "author": "maxim klenov",
   "type": "module",
-  "license": "Apache",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/maxim-klenov/vite-portfolio.git"
