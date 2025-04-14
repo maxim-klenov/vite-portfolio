@@ -2,6 +2,7 @@
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 4rem;
+    position: relative;
 }
 
 .about__img {
@@ -14,12 +15,12 @@
 .about__info {
     grid-template-columns: repeat(3, 170px);
     gap: 0.5rem;
-    margin-bottom: var(--mb-2);
+    margin-bottom: 20px;
 }
 
 .about__box {
     background-color: var(--container-color);
-    border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.75rem;
     text-align: center;
     padding: 1rem 1.25rem;
@@ -48,7 +49,7 @@
     font-size: 1.1rem;
     font-family: var(--font-semi-bold);
     font-weight: 600;  
-    transform: translateY(-20px);
+    transform: translateY(-12px);
 }
 
 .about__box:hover > :is(.about__title, .about__icon)  {
@@ -80,13 +81,44 @@
     font-size: var(--tiny-font-size);
     transition: all 0.2s ease;
 }
-
-.about__description {
+/* ===================== */
+/* .about__description {
     padding: 0 0.4rem 0 0;
     margin-bottom: var(--mb-0-5);
     line-height: 1.3rem;
+} */
+.about__content {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    font-style: normal;
+    margin-bottom: var(--mb-2);
+    background-color: var(--container-color);
 }
 
+.about__content-table {
+    padding: 0 0.4rem 0 0;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+}
+
+.about__content-row:nth-child(even){
+    background-color: var(--body-color);
+}
+  
+.about__content-column {
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.25rem;
+    text-align: left;
+}
+.about__content-column:first-child {
+    font-family: var(--font-semi-bold);
+    font-weight: 600;  
+}
+/* ================ */
 .about__data a span{
     transition: transform 0.2s ease-out;
 }
@@ -113,6 +145,10 @@
 
 /*=============== BREAKPOINTS ===============*/
 @media screen and (max-width: 992px) {
+    .about__content {
+        max-width: 640px;
+        margin-inline: auto;
+    }
     .about__container {
         grid-template-columns: 1fr;
         row-gap: 1.5rem;
@@ -159,6 +195,10 @@
 }
 
 @media screen and (max-width: 450px) {
+    .about__content-row {
+        font-size: .75rem;
+        padding-inline: 16px;
+    }
     .about__img {
         width: 220px;
     }

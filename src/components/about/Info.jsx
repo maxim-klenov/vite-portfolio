@@ -1,20 +1,17 @@
 import "./about.css";
-import CV from "/cv/cv_maxim-klenov.pdf";
+// import CV from "/cv/cv_maxim-klenov.pdf";
 
 const Info = () => {
     const infoItems = [
         {
-            icon: "bx bx-award",
             title: "Во фронтенде",
             subtitle: "1 год",
         },
         {
-            icon: "bx bx-briefcase-alt",
             title: "Выполнено",
             subtitle: "3+ Проекта",
         },
         {
-            icon: "bx bx-support",
             title: "FAQ",
             subtitle: "Онлайн 24/7",
         },
@@ -24,22 +21,45 @@ const Info = () => {
             <div className="about__info grid">
                 {infoItems.map((item, index) => (
                     <div key={index} className="about__box">
-                        <i className={`${item.icon} about__icon`}></i>
                         <h3 className="about__title">{item.title}</h3>
                         <span className="about__subtitle">{item.subtitle}</span>
                     </div>
                 ))}
             </div>
-
-            <p className="about__description">
-                Привет! Меня зовут Максим и я выступаю в роли фронтэнд разработчика.
-            </p>
-            <p className="about__description">
+            {/* =============== */}
+            {/* <p className="about__description">
                 Я умею эффективно работать в команде, используя свои навыки работы с Git-системой. 
                 Основным преимуществом моей разработки является качественная разработка веб интерфейса.
-            </p>
+            </p> */}
+           
+            <address className="about__content">
+                <table className="about__content-table">
+                    <tbody>
+                        <tr className="about__content-row">
+                            <td className="about__content-column">Имя:</td>
+                            <td className="about__content-column">Максим</td>
+                        </tr>
+                        <tr className="about__content-row">
+                            <td className="about__content-column">Возраст:</td>
+                            <td className="about__content-column">17</td>
+                        </tr>
+                        <tr className="about__content-row">
+                            <td className="about__content-column">Специальность:</td>
+                            <td className="about__content-column">Frontend разработка</td>
+                        </tr>
+                        <tr className="about__content-row">
+                            <td className="about__content-column">Местоположение:</td>
+                            <td className="about__content-column">Россия, Тула</td>
+                        </tr>
+                        <tr className="about__content-row">
+                            <td className="about__content-column">Образование:</td>
+                            <td className="about__content-column">среднее</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </address>
 
-            <a
+            {/* <a
                 download="cv_max-klenov.pdf"
                 href={CV}
                 className="about__button button button--flex"
@@ -59,7 +79,7 @@ const Info = () => {
                     />
                 </svg>
                 <span> Скачать резюме</span>
-            </a>
+            </a> */}
         </div>
     );
 };
