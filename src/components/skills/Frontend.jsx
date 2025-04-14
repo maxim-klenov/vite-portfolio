@@ -1,5 +1,5 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import { ReactSVG } from 'react-svg';
 
 const Frontend = ({title, skills, showIcon, showLevel }) => {
     return (
@@ -9,7 +9,7 @@ const Frontend = ({title, skills, showIcon, showLevel }) => {
             <div className="skills__box">
                 {skills.map((skill, index) => (
                     <div className="skills__data" key={index}>
-                        {showIcon && <i className="bx bx-badge-check"></i>}
+                        {showIcon && <ReactSVG src={skill.src} className="skills__data-svg"/>}
                         <div>
                             <div className="skills__name">
                                 <span className="tooltip" data-content={skill.description}>
@@ -34,7 +34,6 @@ const Frontend = ({title, skills, showIcon, showLevel }) => {
 
 Frontend.propTypes = {
     title: PropTypes.string.isRequired,
-    skills: PropTypes.arrayOf(PropTypes.object).isRequired,
     showIcon: PropTypes.bool.isRequired,
     showLevel: PropTypes.bool.isRequired,
 };

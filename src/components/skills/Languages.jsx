@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Languages = () => {
     const languagesArray = [
         { width: '100%', name: 'Русский', level: 'Родной' },
@@ -12,7 +10,7 @@ const Languages = () => {
             
             <div className="languages__box">
                 {languagesArray.map((lang, index) => (
-                    <div className="language" key={index} title={`Уровень: ~${lang.width}`}>
+                    <div className="language" key={index} title={`Уровень: ${lang.level}`}>
                         <p className="skills__name">{lang.name}</p>
                         <div className="level__bar">
                             <div className="level__bar__inner" style={{ width: lang.width }}></div>
