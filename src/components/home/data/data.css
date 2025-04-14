@@ -1,15 +1,7 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 .home__data {
     display: block;
     position: relative;
 }
-
 
 .home__data::before {
     content: "";
@@ -43,12 +35,8 @@
     padding-left: 5.4rem;
     margin-bottom: var(--mb-2);
     height: 25px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; 
-    -webkit-box-align: center; 
-        -ms-flex-align: center; 
-            align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .home__subtitle::before {
@@ -130,9 +118,7 @@
     }
     .home__subtitle {
         font-size: 1.2rem;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        justify-content: center;
         padding-left: 0;
     }
     .text-rotate {
@@ -142,13 +128,9 @@
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
         margin: 0 auto;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         max-width: 200px;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        justify-content: center;
     }
 }
 
@@ -168,14 +150,10 @@
         position: absolute;
         bottom: 6rem;
         left: 50%;
-        -webkit-transform: translate(-50%, 0);
-            -ms-transform: translate(-50%, 0);
-                transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
     }
     .home__button:hover {
-        -webkit-transform: translate(-50%, 3px);
-            -ms-transform: translate(-50%, 3px);
-                transform: translate(-50%, 3px);
+        transform: translate(-50%, 3px);
     }
 }
 
