@@ -23,7 +23,6 @@ const Header = () => {
         }
     };
     const handleNavLinkClick = () => {
-        console.log('handleNavLinkClick called!');
         setIsMenuOpen(false);
         document.body.classList.remove('body__hidden');
       };

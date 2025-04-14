@@ -5,11 +5,11 @@ import Languages from './Languages';
 const skills = () => {
     const mainSkills = [
         {id: 1, name: 'HTML', src: '/svg/skills/html.svg', description: 'Язык гипертекстовой разметки', level: 'Изучен'},
-        {id: 2, name: 'React', src: '/svg/skills/react.svg', description: 'Библиотека для создания пользовательских интерфейсов', level: 'В процессе'},
-        {id: 3, name: 'CSS', src: '/svg/skills/css.svg', description: 'Язык таблиц стилей', level: 'Изучен'},
+        {id: 2, name: 'CSS', src: '/svg/skills/css.svg', description: 'Язык таблиц стилей', level: 'Изучен'},
+        {id: 3, name: 'JavaScript', src: '/svg/skills/js.svg', description: 'Язык скриптов и сценариев', level: 'Изучен'},
         {id: 4, name: 'Git', src: '/svg/skills/git.svg', description: 'Система контроля версий', level: 'Изучен'},
-        {id: 5, name: 'JavaScript', src: '/svg/skills/js.svg', description: 'Язык скриптов и сценариев', level: 'Изучен'},
         {id: 5, name: 'TypeScript', src: '/svg/skills/ts.svg', description: 'Типизированный язык', level: 'В процессе'},
+        {id: 6, name: 'React', src: '/svg/skills/react.svg', description: 'Библиотека для создания пользовательских интерфейсов', level: 'В процессе'},
     ];
 
     const skillsPlus = [
