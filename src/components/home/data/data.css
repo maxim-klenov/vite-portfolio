@@ -32,7 +32,7 @@
     position: relative;
     font-size: var(--h3-font-size);
     font-family: var(--font-medium);
-    padding-left: 5.4rem;
+    padding-left: 86.4px;
     margin-bottom: var(--mb-2);
     height: 25px;
     display: flex;
@@ -46,11 +46,12 @@
     height: 1px;
     background-color: var(--text-color);
     left: 0;
-    top: 1rem;
+    top: 16px;
 }
 
 .home__description {
     max-width: 500px;
+    font-size: var(--normal-font-size);
     margin-bottom: var(--mb-3);
 }
 
@@ -59,7 +60,7 @@
 }
 
 .home__button svg {
-    margin-top: 0.2rem; 
+    margin-top: 3.2px; 
     width: 24px;
     height: 24px;
 }
@@ -73,15 +74,15 @@
         font-size: 8.75rem;
     }
     .home__subtitle {
-        padding-left: 3rem;
+        padding-left: 48px;
         margin-bottom: var(--mb-1);
     }
     .home__subtitle::before {
         width: 40px;
-        top: 0.8rem;
+        top: 12.8px;
     }
     .home__description {
-        margin-left: 3.75rem;
+        margin-left: 60px;
         margin-bottom: var(--mb-3);
     }
 }
@@ -125,9 +126,8 @@
         height: auto;
     }
     .home__button {
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
-        margin: 0 auto;
+        padding-block: 12.8px;
+        margin-inline: auto;
         display: flex;
         max-width: 200px;
         justify-content: center;
@@ -148,7 +148,7 @@
     }
     .home__button {
         position: absolute;
-        bottom: 6rem;
+        bottom: 96px;
         left: 50%;
         transform: translate(-50%, 0);
     }

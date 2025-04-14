@@ -1,14 +1,14 @@
 .skills__container { 
     grid-template-columns: 1fr 2fr;
-    column-gap: 3rem;
+    column-gap: 48px;
     max-width: 968px;
 } 
 
 .skills__content { 
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 2rem 1.4rem;
-    border-radius: 1.25rem;
+    padding: 32px 22.4px;
+    border-radius: 20px;
 }
 
 .skills__content:first-child { 
@@ -20,13 +20,13 @@
     grid-row: 2 / 3;
     grid-column: 1 / -1;
     text-align: center;
-    padding: 2rem 1.4rem 1rem;
+    padding: 32px 22.4px 16px;
 }
 
 .skills__content-language { 
     grid-row: 1 / 2;
     grid-column: 2 / -1;
-    padding: 2rem 4rem;
+    padding: 32px 64px;
 }
 
 .skills__name {
@@ -46,7 +46,7 @@
 
 .skills__box {
     display: grid;
-    row-gap: 1rem;
+    row-gap: 16px;
     margin-bottom: var(--mb-1-5);
 }
 
@@ -130,8 +130,8 @@
 }
 
 .skills__data-svg svg {
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 20px;
+    height: 20px;
     transition: transform 0.1s ease;
 }
 
@@ -145,15 +145,15 @@
 
 .language {
     display: grid;
-    row-gap: 0.625rem;
-    margin-bottom: 2rem;
+    row-gap: 10px;
+    margin-bottom: 32px;
 }
 
 .level__bar {
     flex-grow: 1;
     background: var(--body-color);
-    border-radius: 0.625rem;
-    height: 0.5rem;
+    border-radius: 10px;
+    height: 8px;
     margin-right: 10px;
 }
 
@@ -174,7 +174,7 @@
         white-space: wrap;
     }
     .skills__content-language {
-        padding: 2rem 2.5rem;
+        padding: 32px 40px;
     }
 
     .skills__data {
@@ -199,7 +199,7 @@
         display: none;
     }
     .skills__content:first-child .skills__data {
-        margin: 0 1.5em;
+        margin: 0 24px;
     }
 
     .skills__content:last-child .skills__data {
@@ -248,7 +248,7 @@
     }
 
     .skills__content:last-child {
-        padding: 2rem;
+        padding: 32px;
     }
 
     .skills__content-language .skills__name {
@@ -271,7 +271,7 @@
     }
 
     .skills__content {
-        padding: 1.5rem;
+        padding: 24px;
     }
 
     .skills__content h3,
