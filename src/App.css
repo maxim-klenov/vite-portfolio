@@ -78,11 +78,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-    scrollbar-gutter: stable;
-}
-
 body,
 button,
 input,
@@ -161,7 +156,7 @@ img {
     padding: 1rem 2rem;
     position: relative;
     border-radius: 3rem;
-    font-weight: var(--font-medium);
+    font-family: var(--font-medium);
     transition: all 0.1s ease-in-out;
 }
 
@@ -228,7 +223,7 @@ img {
     }
 
     .section {
-        padding: 2rem 0 4rem;
+        padding-block: 64px;
     }
 
     .section__subtitle {
