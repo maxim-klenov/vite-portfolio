@@ -26,8 +26,8 @@
     font-display: swap;
 }
 :root {
-    --header-height: 3rem;
-    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --header-height: 48px;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     --title-color: #1c4163;
     --title-color-dark: #001a30;
     --text-color: #194a7a;
@@ -46,14 +46,14 @@
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
     --tiny-font-size: 0.625rem;
-    --mb-0-25: 0.25rem;
-    --mb-0-5: 0.5rem;
-    --mb-0-75: 0.75rem;
-    --mb-1: 1rem;
-    --mb-1-5: 1.5rem;
-    --mb-2: 2rem;
-    --mb-2-5: 2.5rem;
-    --mb-3: 3rem;
+    --mb-0-25: 4px;
+    --mb-0-5: 8px;
+    --mb-0-75: 12px;
+    --mb-1: 16px;
+    --mb-1-5: 24px;
+    --mb-2: 32px;
+    --mb-2-5: 40px;
+    --mb-3: 48px;
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
@@ -76,11 +76,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    scrollbar-gutter: stable;
 }
 
 body,
@@ -123,7 +118,7 @@ img {
 }
 
 .section {
-    padding: 6rem 0 2rem;
+    padding: 96px 0 32px;
 }
 
 .section__title {
@@ -134,7 +129,7 @@ img {
 .section__subtitle {
     display: block;
     font-size: var(--small-font-size);
-    margin-bottom: 4rem;
+    margin-bottom: 64px;
 }
 
 .section__title,
@@ -150,18 +145,18 @@ img {
 
 .grid {
     display: grid;
-    gap: 1.5rem;
+    gap: 24px;
 }
 
 .button {
     float: right;
-    margin-right: 2rem;
+    margin-right: 32px;
     background-color: var(--title-color);
     color: var(--container-color);
-    padding: 1rem 2rem;
+    padding: 16px 32px;
     position: relative;
-    border-radius: 3rem;
-    font-weight: var(--font-medium);
+    border-radius: 48px;
+    font-family: var(--font-medium);
     transition: all 0.1s ease-in-out;
 }
 
@@ -228,7 +223,7 @@ img {
     }
 
     .section {
-        padding: 2rem 0 4rem;
+        padding-block: 64px;
     }
 
     .section__subtitle {

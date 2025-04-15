@@ -22,6 +22,10 @@ const Header = () => {
             document.body.classList.toggle('body__hidden');
         }
     };
+    const handleNavLinkClick = () => {
+        setIsMenuOpen(false);
+        document.body.classList.remove('body__hidden');
+      };
     /*--------------- bottom line --------------- */
     const [borBottom, setBorBottom] = useState(false);
     useEffect(() => {
@@ -57,7 +61,7 @@ const Header = () => {
                     <ul className="nav__list grid">
                         {navLinks.map((navLink, i) => (
                             <li key={i} className='nav__item'>
-                                <a href={navLink.href} className='nav__link'>
+                                <a href={navLink.href} onClick={handleNavLinkClick} className='nav__link'>
                                 <ReactSVG src={navLink.iconSrc} className="nav__icon react-icon"/>
                                 {navLink.text}
                                 </a>

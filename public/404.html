@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Страница не найдена | Maxim Klenov</title>
+    <!-- <link rel="stylesheet" href="../src/App.css"> -->
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="nav__logo">Klenov</a>
+        </nav>
+    </header>
+
+    <main class="section" style="padding-top: 8rem;">
+        <div class="container">
+            <div class="grid" style="place-items: center; text-align: center; gap: 2rem;">
+                <h1 class="section__title" style="font-size: 6rem; line-height: 1; color: var(--title-color-dark);">
+                    404
+                </h1>
+                
+                <h2 class="section__subtitle" style="font-size: 1.5rem; margin: 0;">
+                    Упс! Страница не найдена
+                </h2>
+
+                <p class="about__description" style="max-width: 600px;">
+                    Похоже, вы пытаетесь получить доступ к странице, которой не существует. 
+                    Возможно, она была перемещена или удалена.
+                </p>
+
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                    <a href="/" class="button button--flex">
+                        <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 304 384">
+                            <path fill="var(--container-color)" d="M299 128L149 277L0 128h85V0h128v128zM0 320h299v43H0z"/>
+                        </svg>
+                        На главную
+                    </a>
+                    
+                    <a href="#contact" class="button button--flex" style="background-color: var(--container-color); color: var(--title-color);">
+                        <ReactSVG src="/svg/message.svg" class="react-icon"/>
+                        Связаться
+                    </a>
+                </div>
+
+                <div class="home__social" style="margin-top: 3rem; justify-content: center;">
+                    <a href="https://t.me/tgxzz" class="home__social-icon" target="_blank" rel="noopener noreferrer" 
+                       aria-label="Telegram" title="Telegram">
+                        <img src="/svg/telegram.svg" alt="Telegram" class="react-icon"/>
+                    </a>
+                    <a href="https://github.com/maxim-klenov" class="home__social-icon" target="_blank" rel="noopener noreferrer"
+                       aria-label="GitHub" title="GitHub">
+                        <img src="/svg/github.svg" alt="GitHub" class="react-icon"/>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=79964329699" class="home__social-icon" target="_blank" rel="noopener noreferrer"
+                       aria-label="WhatsApp" title="WhatsApp">
+                        <img src="/svg/whatsapp.svg" alt="WhatsApp" class="react-icon"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

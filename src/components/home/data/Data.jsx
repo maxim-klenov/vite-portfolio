@@ -32,8 +32,8 @@ const Data = () => {
                 </h2>
             </hgroup>
             <p className="home__description">
-                В настоящее время специализируюсь на разработке React Typescript
-                проектов / статичных сайтов. Разработчик-самоучка.
+                В настоящее время специализируюсь на разработке React
+                проектов и статичных веб-сайтов. Разработчик-самоучка.
             </p>
             <a href="#contact" className="home__button button button--flex">
                 Связаться
