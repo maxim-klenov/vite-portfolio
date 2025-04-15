@@ -8,10 +8,17 @@ export default defineConfig({
     port: 5173
   },
   build: {
-    assetsDir: 'assets',
+    cssCodeSplit: true,
     rollupOptions: {
+      input: {
+        main: './index.html',
+        404: './public/404.html'
+      },
       output: {
-        assetFileNames: 'assets/[name]-[hash][extname]'
+        manualChunks: {
+          react: ['react', 'react-dom'],
+          animation: ['framer-motion']
+        }
       }
     }
   }
